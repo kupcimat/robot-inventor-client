@@ -1,8 +1,8 @@
 import logging
 
 
-def setup_logging():
+def setup_logging(level: int = logging.INFO):
     logging.basicConfig(
-        level=logging.INFO,
+        level=level,
         format="%(asctime)s %(levelname)s %(filename)s:%(lineno)s %(message)s",
     )
